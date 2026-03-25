@@ -4,7 +4,7 @@ python-decouple==3.8
 dj-database-url==2.1.0
 django-s3-folder-storage==0.5
 collectfast==2.2.0
-psycopg2-binary==2.9.9
+psycopg2-binary==2.9.10
 django-debug-toolbar==4.3.0
 django-ordered-model==3.7.4
 django-extensions==3.2.3
