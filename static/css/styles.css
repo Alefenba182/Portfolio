@@ -425,13 +425,48 @@ img{
 /* ===== MEDIA QUERIES =====*/
 /* For small devices */
 @media screen and (max-width: 320px) {
-  .home__img {
-    width: 40%;
-    height: 100%;
-    top: 0;
-    object-fit: cover;
-    object-position: center top;
-  }
+    .home__img {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        right: auto;
+        top: auto;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 0;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+    .home__container{
+        height: auto;
+        min-height: calc(100vh - var(--header-height));
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        padding-bottom: 0;
+        row-gap: 0;
+    }
+    .home__title{
+        max-width: 100%;
+        align-self: flex-start;
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
+    .home__img{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        right: auto;
+        top: auto;
+        object-fit: cover;
+        object-position: center top;
+    }
+    .home__scroll{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -479,12 +514,18 @@ img{
         position: relative;
     }
     .home__img{
+        position: absolute;
         width: 40%;
         height: 100%;
         right: 0;
         top: 0;
         object-fit: cover;
         object-position: center top;
+    }
+    .home__title{
+        max-width: 60%;
+        align-self: center;
+        margin-bottom: 2rem;
     }
 
     .about__container{
@@ -498,8 +539,10 @@ img{
         height: 200px;
     }
     .about__img img{
-        width: 300%;
+        width: 100%;
         height: 100%;
+        object-fit: cover;
+        object-position: center top;
     }
 
     .skills__container{
