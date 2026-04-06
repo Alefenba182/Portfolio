@@ -445,25 +445,33 @@ img{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding-top: 2rem;
-        padding-bottom: 0;
+        align-items: flex-start;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
         row-gap: 0;
     }
     .home__title{
         max-width: 100%;
         align-self: flex-start;
+        text-align: left;
         margin-bottom: 1.5rem;
         margin-top: 1rem;
+        border-left: none;
+        padding-left: 0;
+        font-size: 2.5rem;
+        line-height: 1;
     }
     .home__img{
-        position: relative;
-        width: 100%;
-        height: 350px;
-        right: auto;
-        top: auto;
-        object-fit: cover;
-        object-position: center top;
-        display: block;
+        position: relative !important;
+        width: 70% !important;
+        max-width: 100% !important;
+        height: 350px !important;
+        right: auto !important;
+        top: auto !important;
+        object-fit: cover !important;
+        object-position: center top !important;
+        display: block !important;
+        margin: 0 auto !important;
     }
     .home__scroll{
         display: none;

@@ -6,7 +6,7 @@ from django.db import models
 class Inicio(models.Model):
     nome = models.CharField(max_length=50)
     saudacao = models.CharField(max_length=20)
-    foto = models.ImageField(upload_to='s3.amazonaws.com/alefeportfolio/media/Perfil')
+    foto = models.ImageField(upload_to='Perfil')
     # save time when modified
     updated = models.DateTimeField(auto_now=True)
 
