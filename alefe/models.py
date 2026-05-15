@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import RegexValidator
 
 
 # HOME SECTION
@@ -74,5 +75,21 @@ class Certificado(models.Model):
     link_certificado = models.URLField(max_length=200)
 
 
+class Contato(models.Model):
+    email = models.EmailField()
+    telefone = models.CharField(
+        max_length=15, 
+        validators=[
+            RegexValidator(
+                regex = r'^\(\d{2}\) \d{5}-\d{4}$',
+                message = "Digite no formato: (12) 99999-9999"
+            )
+        ]  
+    )
+    
+    def __str__(self):
+        return str(self.email)
 
-
+    class Meta:
+        verbose_name = 'Contato'
+        verbose_name_plural = 'Contatos'
