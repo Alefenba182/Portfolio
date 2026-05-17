@@ -473,7 +473,6 @@ img{
         object-position: center top !important;
         display: block !important;
         margin: 0 auto !important;
-        border-radius: 50% !important;       /* Opcional: se quiser redonda no mobile também */
     }
     .home__scroll{
         display: none;
