@@ -463,9 +463,9 @@ img{
     }
     .home__img{
         position: relative !important;
-        width: 70% !important;
-        max-width: 280px !important;        /* Limite para não ficar enorme */
-        height: auto !important;             /* ✅ Remove altura fixa */
+        width: 90% !important;
+        max-width: 400px !important;        /* Limite para não ficar enorme */
+        height: 450px !important;             /* ✅ Remove altura fixa */
         aspect-ratio: 1 / 1 !important;      /* ✅ Força proporção quadrada */
         right: auto !important;
         top: auto !important;
@@ -473,6 +473,7 @@ img{
         object-position: center top !important;
         display: block !important;
         margin: 0 auto !important;
+
     }
     .home__scroll{
         display: none;
